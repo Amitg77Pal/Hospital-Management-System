@@ -15,7 +15,7 @@
 <br/>
 <br/>
 
-In mySql create:-<br/>
+In mySql Create:-<br/>
 create database hospital;<br/>
 use hospital;<br/>
 CREATE TABLE signup (<br/>
