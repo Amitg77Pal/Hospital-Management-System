@@ -1,20 +1,32 @@
 
 <img width="904" alt="image" src="https://github.com/user-attachments/assets/56ce3412-84dd-4840-8921-9e1aa4cb1a53" />
-![Screenshot 2024-10-11 015306](https://github.com/user-attachments/assets/6ebd2cca-e3d6-46cc-a588-5724cf7beb28)
-![Screenshot 2024-10-11 022720](https://github.com/user-attachments/assets/c89d0d6f-c1ec-482a-8bf8-0a0e852c0d8f)
-![Screenshot 2024-10-11 015831](https://github.com/user-attachments/assets/9dfebe85-4267-4383-a2b6-4eda69e90d1d)
-![Screenshot 2024-10-11 015856](https://github.com/user-attachments/assets/6fd9e59b-59d5-49e7-90c2-0d2b3d4e8de1)
-![Screenshot 2024-10-11 020001](https://github.com/user-attachments/assets/bcacbfab-b3c5-49af-9b49-ff6cf4782b9e)
-![Screenshot 2024-10-11 022932](https://github.com/user-attachments/assets/0318ca5f-c404-4dd4-8305-37f2b81cd0c2)
-![Screenshot 2024-10-11 020041](https://github.com/user-attachments/assets/646cd1e6-9644-4a2b-be73-5e77734109d4)
+<img width="874" alt="image" src="https://github.com/user-attachments/assets/a1e1f310-3bdf-4770-a230-843d38c9b4c8" />
+
+<img width="898" alt="image" src="https://github.com/user-attachments/assets/9b3fb1c8-2736-4098-9f2f-5c3cdeaf5558" />
+
+<img width="910" alt="image" src="https://github.com/user-attachments/assets/f374c0e0-fb56-4a96-8999-efb7062a7e59" />
+
+<img width="897" alt="image" src="https://github.com/user-attachments/assets/397de966-5d4c-4eed-914f-49d77c04d25b" />
+
+<img width="895" alt="image" src="https://github.com/user-attachments/assets/57374887-03e3-4aa3-9e16-972e24477c28" />
+
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/e9ca685f-65f1-45c5-91df-fa073333eb03" />
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/8969e209-04c1-4ef7-a2c9-b13b5a2aadd3" />
+
+
+In mySql create:-
 create database hospital;
 use hospital;
 CREATE TABLE signup (
-    email VARCHAR(255) NOT NULL PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL,
-    Age INT NOT NULL CHECK (Age > 0),
-    ContactNumber VARCHAR(10) NOT NULL CHECK (LENGTH(ContactNumber) = 10),
-    password VARCHAR(255) NOT NULL
+    patientNu INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Age INT NOT NULL,
+    ContactNumber VARCHAR(15) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    service VARCHAR(255),
+    doctor VARCHAR(255),
+    PRIMARY KEY (patientNu)
 );
 
 
