@@ -12,21 +12,22 @@
 
 <img width="951" alt="image" src="https://github.com/user-attachments/assets/e9ca685f-65f1-45c5-91df-fa073333eb03" />
 <img width="951" alt="image" src="https://github.com/user-attachments/assets/8969e209-04c1-4ef7-a2c9-b13b5a2aadd3" />
+<br/>
+<br/>
 
-
-In mySql create:-
-create database hospital;
-use hospital;
-CREATE TABLE signup (
-    patientNu INT NOT NULL AUTO_INCREMENT,
-    email VARCHAR(255) NOT NULL,
-    Name VARCHAR(255) NOT NULL,
-    Age INT NOT NULL,
-    ContactNumber VARCHAR(15) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    service VARCHAR(255),
-    doctor VARCHAR(255),
-    PRIMARY KEY (patientNu)
+In mySql create:-<br/>
+create database hospital;<br/>
+use hospital;<br/>
+CREATE TABLE signup (<br/>
+    patientNu INT NOT NULL AUTO_INCREMENT,<br/>
+    email VARCHAR(255) NOT NULL,<br/>
+    Name VARCHAR(255) NOT NULL,<br/>
+    Age INT NOT NULL,<br/>
+    ContactNumber VARCHAR(15) NOT NULL,<br/>
+    password VARCHAR(255) NOT NULL,<br/>
+    service VARCHAR(255),<br/>
+    doctor VARCHAR(255),<br/>
+    PRIMARY KEY (patientNu)<br/>
 );
 
 
